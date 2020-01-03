@@ -15,7 +15,7 @@ guess_equality () {
 	return 0
 }
 
-nfiles=$(ls -l | grep -v '^d' | wc -l)
+nfiles=$(ls -l -a | grep -v '^d' | wc -l)
 prompt="Please enter the number of files in the directory:"
 
 echo $prompt
